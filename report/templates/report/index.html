@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            font-size: 20px;
+          }
+          
+          table {
+            border-collapse: collapse;
+            
+          }
+          
+          th {
+            text-align: center;
+          }
+
+          td{
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+
+          tr:nth-child(even) {background-color: #f2f2f2;}
+        
+    </style>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Year</th>
+            <th>Min</th>
+            <th>Max</th>
+            <th>Avg</th>
+        </tr>
+        {%for d in data%}
+        <tr>
+            <td>{{d.0}}</td>
+            
+            <td>{{d.1}}</td>
+
+            <td>{{d.2|floatformat}}</td>
+
+            <td>{{d.3|floatformat}}</td>
+
+            
+            <td>{{d.4|floatformat}}</td>
+            
+            
+        </tr>
+        {%endfor%}
+    </table>
+    
+</body>
+</html>
