@@ -25,7 +25,7 @@ SECRET_KEY = 'ef%kb*^=84jdj1ivnq2p&4@9)36s3rpy6@7ylod#t@xggf$+1@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://petroleum-report.herokuapp.com/','127.0.0.1']
 
 
 # Application definition
